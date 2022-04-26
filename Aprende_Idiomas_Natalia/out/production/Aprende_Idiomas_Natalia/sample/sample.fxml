@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="91.0" layoutY="73.0" prefHeight="313.0" prefWidth="441.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Juego">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lPalabraAlea" layoutX="50.0" layoutY="53.0" prefHeight="17.0" prefWidth="125.0" text="palabra aletatoria" />
+                        <Button fx:id="bCargar" layoutX="305.0" layoutY="41.0" mnemonicParsing="false" text="Cargar partida" />
+                        <Label fx:id="lAcierto" layoutX="332.0" layoutY="84.0" text="Aciertos" />
+                        <Label fx:id="lFallos" layoutX="336.0" layoutY="115.0" text="Fallos" />
+                        <TextField fx:id="miResultado" layoutX="37.0" layoutY="162.0" />
+                        <Button fx:id="bComprobar" layoutX="313.0" layoutY="162.0" mnemonicParsing="false" text="Comprobar" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="MiDiccionario">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="lPalabra" layoutX="235.0" layoutY="44.0" />
+                        <TextField layoutX="235.0" layoutY="117.0" />
+                        <Button fx:id="nuevaPalabra" layoutX="59.0" layoutY="44.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Introduzca palabra" />
+                        <Button fx:id="nuevaTraduccion" layoutX="59.0" layoutY="117.0" mnemonicParsing="false" text="Introduzca traducción" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="123.0" layoutY="23.0" text="LANGUAGES OF THE WORLD">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
